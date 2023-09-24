@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Homepage from './Components/Homepage';
+import Loginsignup from './Components/Loginsignup/Loginsignup';
 import Navbar from './Components/Navbar';
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
     <div>
       <Navbar/>
       <Homepage/>
+      <Loginsignup/>
+      
     </div>
     
   );
