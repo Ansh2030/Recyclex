@@ -19,7 +19,7 @@ function Services() {
           <div className="facilities-col">
           <img src={pic}/>
             <h3>Blogs and News</h3>
-            <p>Know more about the Ewaste management plans, infrastructure and its importance . Connect with people and share you ideas.</p>
+            <p>Know more about the Ewaste management plans, infrastructure and its importance . Connect with people and share you ideas. Or chat with our bot.</p>
           </div>
 
           <div className="facilities-col">
