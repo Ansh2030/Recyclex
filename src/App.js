@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Homepage from './Components/Homepage';
+import Loginsignup from './Components/Loginsignup/Loginsignup';
 function App() {
   return (
     // <div className="App">
@@ -20,7 +21,8 @@ function App() {
     //   </header>
     //</div>
     <div>
-<Homepage/>
+      <Loginsignup/>
+      {/* <Homepage/> */}
     </div>
     
   );
