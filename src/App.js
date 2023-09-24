@@ -2,6 +2,7 @@
 import './App.css';
 import Homepage from './Components/Homepage';
 import Loginsignup from './Components/Loginsignup/Loginsignup';
+import Navbar from './Components/Navbar';
 function App() {
   return (
     // <div className="App">
@@ -21,8 +22,10 @@ function App() {
     //   </header>
     //</div>
     <div>
+      <Navbar/>
+      <Homepage/>
       <Loginsignup/>
-      {/* <Homepage/> */}
+      
     </div>
     
   );
