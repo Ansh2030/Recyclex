@@ -1,0 +1,60 @@
+.section1{
+    background-image: url('../Images/Poster1.jpg');
+    aspect-ratio: 36/ 9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:665px;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+.section1 h1{
+    font-size: 50px;
+    width:60%;
+    font-size: 50px;
+    font-weight: bold;
+    width: 50%;
+    color: whitesmoke;
+    margin-left: 5%;
+}
+
+
+
+/*   ------------------------------------------------ */
+
+
+.mech{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 70px;
+   
+    justify-content: center;
+    /* justify-items: center; */
+    position: relative;
+    /* box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    padding: 2rem; */
+   
+    background-color: var(--secondary);
+  }
+
+
+
+
+   .mech .details{
+    margin-left:60px;
+    margin-top: 60px;
+    width:700px
+  }
+.mech .details h1{
+    color:black
+  }
+.mech .details p
+  {
+    color: #484D57;
+    line-height: 31px;
+    font-size: 18px;
+    margin-top: 51px;
+  }
