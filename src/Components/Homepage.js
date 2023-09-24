@@ -1,7 +1,9 @@
 import React from 'react'
 import poster1 from "../../src/Images/Poster1.jpg";
 import sower from "../../src/Images/gsower.png";
+ 
 import './Homepage.css';
+import Services from './Service/Services';
 function Homepage() {
   return (
     <div>
@@ -22,15 +24,15 @@ function Homepage() {
               The website serves as a centralized platform that provides users with vital information regarding the location of the nearest e-waste collection and recycling facilities,. It seamlessly combines pick-up and drop-off services, enabling users to locate nearby e-waste facilities or opt for convenient home collection scheduling at no extra charges.
               </p>
               <p>	We offer educational features to shed light on detrimental effects of e-waste on environment and human health, in an interactive manner.
-         It will allow people to form communities on the app and share blogs , newsletters etc .Along with a platform to resell used products at best prices and also earn credit points on the precious metals recovered from device.
+                 It will allow people to form communities on the app and share blogs , newsletters etc .Along with a platform to resell used products at best prices and also earn credit points on the precious metals recovered from device.
             </p>
             </div>
             <div className="logomech">
               <img src={sower} alt="this is image" />
             </div>
-          </div>
-
-          
+        </div>
+<Services/>
+         
 
 
        
