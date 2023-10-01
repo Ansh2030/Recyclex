@@ -1,0 +1,34 @@
+
+.locatecard{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    padding: 10px 20px;
+    margin-top: 40px;
+    box-shadow:  4px 4px 8px 4px hsla(0, 1%, 45%, 0.2);
+    border-radius: 20px;
+    margin: 40px 20px;
+   width: max-content;
+  }
+  .locatecard div img{
+    width:170px;
+    height:150px;
+    object-fit: contain;
+
+  }
+
+  .locatecard .card-left{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    width:300px;
+    margin-top: 10px;
+    
+  }
+  .locatecard .card-left head, .locatecard .card-left .add{
+    width: 280px;
+  }
+  .locatecard .card-left .add{
+    font-size: 14px;
+  }
+
