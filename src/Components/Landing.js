@@ -11,10 +11,13 @@ import a3 from "../Images/Vice.jpg";
 import a4 from "../Images/phillips.jpg"
 import a5 from "../Images/Boat.jpg"
 import a6 from "../Images/xiaomi.jpg";
+import { useUserAuth } from '../Context/UserAuthContext';
 
 function Landing() {
 
+    const {user} = useUserAuth();
   return ( 
+    user?
 <>
 <a href="HOME"></a>
     <div class="main">
@@ -333,7 +336,8 @@ function Landing() {
 
 
 
-   </>
+   </>:
+   <div>signIN first</div>
   )
 }
 

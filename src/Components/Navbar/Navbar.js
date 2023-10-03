@@ -18,6 +18,8 @@ function Navbar() {
                         <li><a href="otherHTML/statistics.html">WHO WE ARE?</a></li>
                         <li><a href="/locate">LOCATE</a></li>
                         <li><a href="/quiz">Quiz</a></li>
+                        <li><a href="/signin">Signin</a></li>
+                        
                     </ul>
                 </div>
 
