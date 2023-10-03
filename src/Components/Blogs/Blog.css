@@ -1,0 +1,44 @@
+.blogs{
+    grid-gap: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+    justify-content: center;
+    justify-items: center;
+    margin:40px 100px;
+    row-gap: 30px;
+}
+
+.blogs .card-text{
+    color:black
+}
+
+.blogs .card:hover{
+    margin-top:-7px;
+    box-shadow:  4px 4px 8px 4px hsla(0, 1%, 45%, 0.2);
+    cursor:pointer;
+    transition: 0.4s;
+}
+
+.firstsection{
+    align-items: center;
+    /* aspect-ratio: 16/9; */
+    background-image: url(../../Images/Poster1.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 565px;
+    justify-content: center;
+    max-height: 100vh;
+    text-align: center;
+    color:white;
+  
+}
+.firstsection h1{
+    font-size: 80px;
+}
+ h3{
+    margin:50px 50px
+}
