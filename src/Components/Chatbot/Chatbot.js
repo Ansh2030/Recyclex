@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import "./Chatbot.css";
 import bot from "../../Images/bro.png";
 import ai  from  "../../Images/AI .png";
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 const Chatbot = ()=> {
 
@@ -57,6 +59,7 @@ const Chatbot = ()=> {
 
   return (
     <div>
+       <Navbar/>
         {/* <div className="back-to-home">
       <a href="../index.html">
         <h1><i className="fas fa-long-arrow-alt-right back-to-home-arrow"></i>
@@ -101,6 +104,8 @@ const Chatbot = ()=> {
 
 
     </div>
+
+    <Footer/>
     </div>
   )
 }

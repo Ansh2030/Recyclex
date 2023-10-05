@@ -1,25 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Quiz.css";
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 function Quiz() {
+const [ans, setans] = useState('');
+
+const [index, setIndex] = useState(0);
+
+const ques =[
+    "firts ques",
+    "second ques"
+]
+const check=()=>{
+ if(ans==='C')
+ alert("right answer");
+ else 
+ alert("wrong answer");
+}
+
   return (
  <div>
-{/* 
-<div className="navbar">
-        <div className="navbar-left">
-            <span className="navbar-logo">Quiz Time</span>
-        </div>
-        <div className="navbar-middle">
-            
-            <i className="fas fa-search search-icon"></i>
-           <input type="text" id="search-input" placeholder="Search"/>
-            <button className="start-quiz-button">Start Quiz</button>
-        </div>
-        <div className="navbar-right">
-            
-            <div className="next-person-icon"></div>
-            <span className="user-name">John Doe</span>
-        </div>
-    </div> */}
+
+
+     <Navbar/>
 
     {/* <!-- MAIN SECTION CODE --> */}
     <div className="main-section">
@@ -31,10 +34,10 @@ function Quiz() {
             </div>
             <h2 className="choose-answer-heading">Choose an answer:</h2>
             <form className="answer-options">
-                <label><input type="radio" name="answer" value="A"/> Option A</label><br/>
-                <label><input type="radio" name="answer" value="B"/> Option B</label><br/>
-                <label><input type="radio" name="answer" value="C"/> Option C</label><br/>
-                <label><input type="radio" name="answer" value="D"/> Option D</label><br/>
+                <label><input type="radio" name="answer" value="A" onChange={(e)=>setans(e.target.value)}/> Option A</label><br/>
+                <label><input type="radio" name="answer" value="B" onChange={(e)=>setans(e.target.value)}/> Option B</label><br/>
+                <label><input type="radio" name="answer" value="C" onChange={(e)=>setans(e.target.value)}/> Option C</label><br/>
+                <label><input type="radio" name="answer" value="D" onChange={(e)=>setans(e.target.value)}/> Option D</label><br/>
             </form>
         </div>
         <div className="right-section">
@@ -43,16 +46,18 @@ function Quiz() {
                 <p className="sub-heading">Question 1/5</p>
             </div>
             <div className="question">
-                <p>How can we manage electronic waste (e-waste) sustainably? E-waste, which contains hazardous materials and valuable resources, presents both environmental and economic challenges. Effective recycling, responsible disposal, and minimizing e-waste generation are crucial to mitigate its adverse effects on the environment and promote resource conservation.</p>
+              {ques[index]}
+                {/* <p>How can we manage electronic waste (e-waste) sustainably? E-waste, which contains hazardous materials and valuable resources, presents both environmental and economic challenges. Effective recycling, responsible disposal, and minimizing e-waste generation are crucial to mitigate its adverse effects on the environment and promote resource conservation.</p> */}
             </div>
             <div className="submit-card">
-                <button id="submit-button">Submit</button>
+                <button id="submit-button" onClick={check}>Submit</button>
+                {/* <button id="submit-button" onClick={()=>setIndex(index+1)}>Next</button> */}
             </div>
         </div>
     </div>
 
 
-
+<Footer/>
 
     {/* this is return div close */}
  </div>

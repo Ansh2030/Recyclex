@@ -3,7 +3,7 @@ import './Signin.css';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 
-import { GoogleAuthProvider} from "firebase/auth";
+
   import { auth, db , app} from "../../firebase_config";
 import { useUserAuth } from '../../Context/UserAuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -13,26 +13,19 @@ function Signin() {
   const [err , seterr] = useState("");
   const navigate = useNavigate();
 
-   const {signUp , logIn, logOut} = useUserAuth();
+   const {signUp , logIn, logOut, loginWithGoogle} = useUserAuth();
 
 
 
 
-    const loginWithGoogle= ()=>{
-  firebase
-  .auth()
-  .signInWithPopup(new firebase.auth.GoogleAuthProvider())
-  .then((userCred)=>{
-    console.log(userCred);
-  })
-    }
 
 
     const handlesignup= async(e)=>{
         e.preventDefault();
  try {
     await signUp(email, pass);
- navigate("/");
+    window.localStorage.setItem('auth', 'true');
+    navigate("/");
  } catch (error) {
     seterr(error.message);
  }
@@ -42,6 +35,7 @@ function Signin() {
     e.preventDefault();
     try {
        await logIn(email, pass);
+       window.localStorage.setItem('auth', 'true');
     navigate("/");
     } catch (error) {
        seterr(error.message);
@@ -56,6 +50,14 @@ function Signin() {
     }
   }
 
+  const lwg = async()=>{
+    try{
+        await loginWithGoogle();
+    }
+    catch(err){
+        console.log(err);
+    }
+  }
 
 
 
@@ -119,7 +121,7 @@ function Signin() {
                 </p>
 
 
-                <button onClick={loginWithGoogle}>Signin with google</button>
+                <button onClick={lwg}>Signin with google</button>
                 <button onClick={handlelogout}>logout</button>
               </div>
             </form>

@@ -1,6 +1,14 @@
 import React from 'react'
 import './Navbar.css';
+import { useUserAuth } from '../../Context/UserAuthContext';
 function Navbar() {
+    const {user ,login,setLogin, logOut} = useUserAuth();
+    console.log("this is navbar ",user);
+    const handlelogout= ()=>{
+         logOut();
+    
+        alert("Logged Out")
+    }
   return (
     <div>
          <div className="header">
@@ -12,13 +20,18 @@ function Navbar() {
                 <div className="nav-list-cont">
                     <ul className="nav-ul">
                         <li><a href="/" >HOME</a></li>
-                        <li><a href="/api/blogs">BLOGS</a></li>
-                        <li><a href="/api/compose">Compose</a></li>
-                        <li><a href="/chatbot">Chatbot</a></li>
+                        <li><a href="/app/api/blogs">BLOGS</a></li>
+                        <li><a href="/app/api/compose">Compose</a></li>
+                        <li><a href="/app/chatbot">Chatbot</a></li>
                         <li><a href="otherHTML/statistics.html">WHO WE ARE?</a></li>
-                        <li><a href="/locate">LOCATE</a></li>
-                        <li><a href="/quiz">Quiz</a></li>
-                        <li><a href="/signin">Signin</a></li>
+                        <li><a href="/app/locate">LOCATE</a></li>
+                        <li><a href="/app/quiz">Quiz</a></li>
+                        <li><a href="/app/dashboard">DASHBOARD</a></li>
+
+                        {
+                            user?  <li onClick={handlelogout}> <a>LogOut</a></li>  :<li><a href="/signin">Signin</a></li>
+                        }
+                        
                         
                     </ul>
                 </div>

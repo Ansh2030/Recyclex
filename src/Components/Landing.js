@@ -11,16 +11,18 @@ import a3 from "../Images/Vice.jpg";
 import a4 from "../Images/phillips.jpg"
 import a5 from "../Images/Boat.jpg"
 import a6 from "../Images/xiaomi.jpg";
+import Navbar from './Navbar/Navbar';
 import { useUserAuth } from '../Context/UserAuthContext';
-
+import Footer from './Footer/Footer';
 function Landing() {
 
     const {user} = useUserAuth();
   return ( 
-    user?
+    // user?
 <>
+<Navbar/>
 <a href="HOME"></a>
-    <div class="main">
+    <div class="mainland">
 
     {/* <!-- ++ CONTENT-ON-LANDING-PAGE +++  -->
     <!-- "Turning Trash into Treasure: Where Innovation Meets Conservation" --> */}
@@ -33,7 +35,7 @@ function Landing() {
                 </div>
     
                 <div className="content-quote-cont">
-                    <p className="quote"> E-waste, once discarded, now holds the potential to be reborn as valuable components, exemplifying the inherent capacity for renewal and transformation.In the world of electronics, yesterday's trash becomes tomorrow's treasure through the magic of e-waste recycling <span> Trash To Treasure</span>
+                    <p className="quotes"> E-waste, once discarded, now holds the potential to be reborn as valuable components, exemplifying the inherent capacity for renewal and transformation.In the world of electronics, yesterday's trash becomes tomorrow's treasure through the magic of e-waste recycling <span> Trash To Treasure</span>
                                        </p>
                 </div>
             </div>
@@ -278,7 +280,7 @@ function Landing() {
     <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
     +++++++++++                   FOOTER                         +++++++++++ 
     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--> */}
-
+{/* 
     <a id="FOOTER"></a>
     <div className="footer">
         <div className="footer-text-cont">
@@ -332,12 +334,12 @@ function Landing() {
         </div>
 
         <p className="copy-rights">Thank You for Supporting Responsible E-Waste Management :</p>
-    </div>
+    </div> */}
 
 
-
-   </>:
-   <div>signIN first</div>
+<Footer/>
+   </>
+//    <div>signIN first</div>
   )
 }
 
