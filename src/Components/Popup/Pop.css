@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Poppins:wght@300;500&display=swap');
+.ccard {
+    font-family: 'Kurale', serif;
+    position:fixed;
+   /* font-family: 'Poppins', sans-serif; */
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px 25%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.left-part, .right-part {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-part {
+    background-color: #f0f0f0;
+    border-radius: 10px 0 0 10px;
+}
+
+.right-part {
+    position: relative;
+    background-color: #007bff;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.e-waste-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.right-part:hover .e-waste-image {
+    opacity: 1;
+}
+
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+

@@ -1,0 +1,34 @@
+.display{
+    height: max-content;
+    width: 60vw;
+    /* border: 3px solid black; */
+    margin-top: 50px;
+    margin-left: -30px;
+    box-shadow:  4px 4px 8px 4px hsla(0, 1%, 45%, 0.2);
+    overflow-y: auto;
+    margin:auto auto;
+    padding:0px 40px
+
+}
+.display div{
+    margin-bottom: 40px;
+}
+.display div img{
+    width: 800px;
+    height:600px;
+    object-fit: contain;
+   
+}
+.display h1{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.display h2{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+.display .writer{
+    text-align: end;
+}

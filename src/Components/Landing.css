@@ -45,8 +45,9 @@ p::selection{
 
 
 
-.main{
+.mainland{
     /* border:1px solid red; */
+    position: relative;
     width:100%;
     height:100vh;
     padding-bottom: 6em;
@@ -54,7 +55,7 @@ p::selection{
 }
 
 @media(max-height:655px){
-    .main{
+    .mainland{
         height:auto;
         padding-bottom: 4em;
     }
@@ -64,7 +65,7 @@ p::selection{
 /* +++++++ HEADER +++++ */
 /* 
 
- .main .header {
+ .mainland .header {
   
     width: 95%;
     margin: 0 auto;
@@ -135,7 +136,7 @@ p::selection{
         display: none;
     }
 
-   .main  .header{
+   .mainland  .header{
         padding:1.5em 0;
     }
 
@@ -288,21 +289,24 @@ p::selection{
 }
 
 
-.quote{
+.quotes{
+    text-align: justify;
     color: var(--dark-color);
     padding-bottom: 3em;
 }
 
-.quote span{
+.quotes span{
     color:var(--primary-color);
     font-weight: 700;
 }
 
 
 .content-2{
-    width:60ch;
+    width:51ch;
+    text-align: justify;
     padding: .1em .1em .1em 0.1em;
     z-index: 60;
+    margin-bottom: 30px;
 }
 
 .explore-btn-cont{
@@ -371,10 +375,11 @@ p::selection{
     width: 100%;
 } */
 .illustration-cont div img{
-    width: 100%;
-    height: 10%;
+    right: 10px;
+    bottom: -17px;
+   position: absolute;
     object-fit: cover;
-
+mix-blend-mode: darken;
     
 }
 
@@ -427,7 +432,7 @@ p::selection{
         margin-top: 4em;
     }
     
-    .quote{
+    .quotes{
         padding-bottom: 2em;
     }
 
@@ -480,7 +485,7 @@ p::selection{
         display: none;
     }
 
-    .main{
+    .mainland{
         /* background-image: url("Images/illustration/illus.jpg"); */
         background-size: cover;
         background-color: var(--lightvarient-darkColor);
@@ -497,7 +502,7 @@ p::selection{
         color:var(--primary-color);
     }
 
-    .quote{
+    .quotes{
         color: var(--light-color);
     }
 
@@ -543,7 +548,7 @@ p::selection{
 
 
 @media(max-width:400px){
-    .main{
+    .mainland{
         background-position-x: -40px;
         background-repeat: no-repeat;
     }
@@ -771,9 +776,11 @@ p::selection{
 
 
 
-.appear{
+.appear, h3, p{
     opacity: 1;
-    transform: translateY(0);
+    /* transform: translateY(0); */
+    margin:0;
+    padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline
 }
 
 
@@ -813,7 +820,7 @@ p::selection{
 
 .talk-page-content h2{
     padding:.5em 0;
-    font-weight: 900;
+    /* font-weight: 900; */
     color: var(--dark-color);
 }
 
@@ -888,7 +895,7 @@ p::selection{
 
 /* ++++++++++++++++++++ FOOTER +++++++++++++++++++ */
 
-
+/* 
 .footer{
     background-color:var(--primary-color) ;
     padding: 3em 3em .5em 3em;
@@ -1020,3 +1027,8 @@ p::selection{
     color:blue;
     font-size: 1.1em;
 }
+
+p{
+    font-size: 100%;
+    line-height: 20px;
+} */

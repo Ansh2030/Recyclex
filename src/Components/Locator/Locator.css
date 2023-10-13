@@ -66,3 +66,106 @@ Height:858px;
     padding-top: 5px;
     box-shadow:  4px 4px 8px 4px hsla(0, 1%, 45%, 0.2);
 }
+
+
+
+
+
+
+/* ===================================== */
+
+
+.car{
+    position: relative;
+    /* background-color: #fff; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
+    border-radius: 25px;
+    padding: 20px;
+    width: 650px;
+    text-align: left;
+    margin: 0 auto;
+    width:max-content;
+    height:150px
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+
+.input-row input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 10px;
+    width:300px
+}
+
+.input-row button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.car img:hover{
+    cursor: pointer;
+}
+
+.car .output-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.car .output-row  .output-data {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    width:300px
+}
+
+.car .output-row  .output-label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+i.fas.fa-arrow-right {
+    color: #4CAF50;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+i.fas.fa-times {
+    color: #FF5733;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button1{
+    width: 200px;
+}
+.input-row img{
+    margin-left: 20px;
+    
+}
+/* .output-data img{
+    position: absolute;
+    right: 0px;
+} */
+.car .arrow{
+    position: absolute;
+    right: 24px;
+    bottom: 25px;
+
+}

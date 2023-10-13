@@ -1,0 +1,16 @@
+.cbicon{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    top:87vh;
+    right: 1vw;
+    z-index: 500;
+    transition: 0.5s;
+}
+.cbicon:hover{
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    top:86vh;
+}
