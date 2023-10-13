@@ -54,8 +54,20 @@ import pic48 from "../../Images/line-3.svg"
 import pic49 from "../../Images/line-2.svg"
 import pic50 from "../../Images/line-1.svg"
 import pic51 from "../../Images/line.svg"
-import pic52 from "../../Images/vector-276.svg"
+import pic52 from "../../Images/avatar.png"
 import pic53 from "../../Images/badge.png"
+import pic55 from "../../Images/starUserDashBoard.png"
+import pic56 from "../../Images/badgeUserDashBoard.png"
+import pic57 from "../../Images/hatUserDashBoard.png"
+import pic58 from "../../Images/crownUserDashBoard.png"
+import pic59 from "../../Images/diamondUserDashBoard.png"
+import pic60 from "../../Images/coinUserDashboard.jpg"
+
+
+
+
+
+
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 
@@ -104,8 +116,8 @@ function Dashboard() {
               <img className="icon-settings" src={pic8} />
               <img className="icon-assignments" src={pic9} />
               <img className="line" src={pic10} />
-              <input className="name" placeholder="samwheeler@example.com" type="email" />
-              <div className="name-2">Sam Wheeler</div>
+              <input className="name" placeholder="TomerAyush@gmail.com" type="email" />
+              <div className="name-2">Ayush Tomer</div>
             </div>
           </div>
           <div className="title-wrapper"><div className="title-2">Recycle X</div></div>
@@ -498,7 +510,7 @@ function Dashboard() {
                   <div className="text-wrapper-6"><div className="text-4">Su</div></div>
                 </div>
                 <div className="line-8">
-                  <div className="atoms-week-namber"><div className="text-5">39</div></div>
+                 
                   <div className="text-wrapper-6"><div className="text-6">25</div></div>
                   <div className="text-wrapper-6"><div className="text-6">26</div></div>
                   <div className="text-wrapper-6"><div className="text-6">27</div></div>
@@ -508,7 +520,7 @@ function Dashboard() {
                   <div className="text-wrapper-6"><div className="text-4">1</div></div>
                 </div>
                 <div className="line-8">
-                  <div className="atoms-week-namber"><div className="text-2">40</div></div>
+              
                   <div className="text-wrapper-6"><div className="text-3">2</div></div>
                   <div className="text-wrapper-6"><div className="text-3">3</div></div>
                   <div className="atoms-dey-number"><div className="text-8">4</div></div>
@@ -518,7 +530,7 @@ function Dashboard() {
                   <div className="text-wrapper-6"><div className="text-4">8</div></div>
                 </div>
                 <div className="line-8">
-                  <div className="atoms-week-namber"><div className="text-5">41</div></div>
+         
                   <div className="text-wrapper-6"><div className="text-3">9</div></div>
                   <div className="text-wrapper-6"><div className="text-3">10</div></div>
                   <div className="text-wrapper-6"><div className="text-3">11</div></div>
@@ -528,7 +540,7 @@ function Dashboard() {
                   <div className="text-wrapper-6"><div className="text-4">15</div></div>
                 </div>
                 <div className="line-8">
-                  <div className="atoms-week-namber"><div className="text-5">42</div></div>
+        
                   <div className="text-wrapper-6"><div className="text-3">16</div></div>
                   <div className="text-wrapper-6"><div className="text-3">17</div></div>
                   <div className="text-wrapper-6"><div className="text-3">18</div></div>
@@ -538,7 +550,7 @@ function Dashboard() {
                   <div className="text-wrapper-6"><div className="text-4">22</div></div>
                 </div>
                 <div className="line-8">
-                  <div className="atoms-week-namber"><div className="text-5">43</div></div>
+               
                   <div className="text-wrapper-6"><div className="text-3">23</div></div>
                   <div className="text-wrapper-6"><div className="text-3">24</div></div>
                   <div className="text-wrapper-6"><div className="text-3">25</div></div>
@@ -548,7 +560,7 @@ function Dashboard() {
                   <div className="text-wrapper-6"><div className="text-4">29</div></div>
                 </div>
                 <div className="line-8">
-                  <div className="atoms-week-namber"><div className="text-5">44</div></div>
+             
                   <div className="text-wrapper-6"><div className="text-3">30</div></div>
                   <div className="text-wrapper-6"><div className="text-3">31</div></div>
                   <div className="text-wrapper-6"><div className="text-6">1</div></div>
@@ -559,15 +571,15 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="ellipse-5"></div>
-            <div className="header-3">Coin Image</div>
+            <div className="ellipse-5"><img className="coinGamifi" src={pic60}/></div>
+            {/* <div className="header-3">Coin Image</div> */}
           </div>
           <div className="overlap-28">
-            <div className="ellipse-6"></div>
-            <div className="ellipse-7"></div>
-            <div className="ellipse-8"></div>
-            <div className="ellipse-9"></div>
-            <div className="ellipse-10"></div>
+            <div className="ellipse-6"><img className="gamifiDashboard" src={pic55}/></div>
+            <div className="ellipse-7"><img className="gamifiDashboard" src={pic56}/></div>
+            <div className="ellipse-8"><img className="gamifiDashboard" src={pic58}/></div>
+            <div className="ellipse-9"><img className="gamifiDashboard" src={pic59}/></div>
+            <div className="ellipse-10"><img className="gamifiDashboard" src={pic57}/></div>
             <div className="primary-title-3">Contributor</div>
             <div className="primary-title-4">Professional</div>
             <div className="primary-title-5">Scholar</div>

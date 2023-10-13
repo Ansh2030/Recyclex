@@ -202,6 +202,21 @@ input[type="text"] {
     cursor: pointer;
 }
 
+.submit-card #next-button {
+    background-color: #6EB007;
+    position: absolute;
+    right: 300px;
+    bottom: 50px;
+    width: 171px;
+    height: 47px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 /* Style the confirmation dialog when the button is clicked */
 .confirmation-dialog {
     background-color: #fff;

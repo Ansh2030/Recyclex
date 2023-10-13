@@ -37,8 +37,14 @@
   
 }
 .firstsection h1{
-    font-size: 80px;
+    font-size: 35px;
+    width:865px;
+    line-height: 45px;
+    letter-spacing: 1px;
+   /* position: absolute;
+   top:250px;
+   left:30px */
 }
- h3{
+.st{
     margin:50px 50px
 }

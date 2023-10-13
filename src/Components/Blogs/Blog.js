@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Cards from '../Cards/Cards';
 import Navbar from '../Navbar/Navbar';
+import Chat from "../Icons/Chat"
 import { Navigate } from 'react-router-dom';
 import'./Blog.css'
 import { useUserAuth } from '../../Context/UserAuthContext';
@@ -30,17 +31,19 @@ function Blog() {
     <div>
     <Navbar/>
       <div className='firstsection'>
-        <h1>R- blogs .. Read - create - share</h1>
+        <h1>"There is no such thing as 'Away'. Every away goes somewhere."
+        </h1>
         </div>
-        <div><h3>Get Started with out best stories</h3></div>
+        <div><h2 className='st'>Get Started with out best stories</h2></div>
       <div className='blogs'>
       {articles.map((element)=>{
-        return <Cards des={element.data} name = {element.idd} key={element.id}/>
+        return <Cards image = {element.img} des={element.data} name = {element.idd} key={element.id}/>
       })}
       </div>
     
 
 <Footer/>
+
       </div>
    
   )

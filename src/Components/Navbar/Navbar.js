@@ -13,7 +13,7 @@ function Navbar() {
     <div>
          <div className="header">
             <div className="logo-cantainer">
-                <h2 className="logo">Recyclex.</h2>
+                <h2 className="logo">RecycleX</h2>
             </div>
 
             <div className="nav-and-btn-cont">
@@ -21,13 +21,13 @@ function Navbar() {
                     <ul className="nav-ul">
                         <li><a href="/" >HOME</a></li>
                         <li><a href="/app/api/blogs">BLOGS</a></li>
-                        <li><a href="/app/api/compose">Compose</a></li>
-                        <li><a href="/app/chatbot">Chatbot</a></li>
-                        <li><a href="otherHTML/statistics.html">WHO WE ARE?</a></li>
+                        {/* <li><a href="/app/api/compose">Compose</a></li> */}
+                        {/* <li><a href="/app/chatbot">Chatbot</a></li> */}
+                        {/* <li><a href="otherHTML/statistics.html">WHO WE ARE?</a></li> */}
                         <li><a href="/app/locate">LOCATE</a></li>
-                        <li><a href="/app/quiz">Quiz</a></li>
+                        <li><a href="/app/quiz">QUIZ</a></li>
                         <li><a href="/app/dashboard">DASHBOARD</a></li>
-
+                        <li><a href="/app/Market">MARKET</a></li>
                         {
                             user?  <li onClick={handlelogout}> <a>LogOut</a></li>  :<li><a href="/signin">Signin</a></li>
                         }
