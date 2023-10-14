@@ -10,6 +10,8 @@ function Market() {
 const [ind, setIN] = useState(0);
 const [selectedBrand, setSelectedBrand] = useState('samsung');
 const [selectedModel, setSelectedModel] = useState('');
+const [show, setShow] = useState(false);
+const [dis, setdis] = useState(false);
 let ar=[
     def,
     def,
@@ -25,15 +27,26 @@ let cred = [
 const handleBrandChange = (event) => {
     const brand = event.target.value;
     setSelectedBrand(brand);
-    // You can add logic here to set default model based on brand if needed
-    // For now, setting an empty string for the model
     setSelectedModel('');
+ setShow(true);
   };
 
   const handleModelChange = (event) => {
     const model = event.target.value;
     setSelectedModel(model);
   };
+
+  const handledevice = (e)=>{
+    const s = e.target.value;
+    console.log(s);
+    if(s=='Other')
+   { setdis(true);
+    setShow(true);}
+    else
+    setdis(false);
+
+   
+  }
 
 
 
@@ -58,11 +71,17 @@ const handleBrandChange = (event) => {
             <div className='det'>
                         <div>Type of Electronic</div>
                         <div className='ipt'>
-                            <select className='sel'>
+                            <select className='sel' onChange={handledevice}>
                             <option value="-1" selected>Select</option>
                                 <option value="mobile">Mobile</option>
                                 <option value="laptop">Laptop</option>
-                                <option value="tablet">Tablet</option>
+                                <option value="Tablet">Tablet</option>
+                                <option value="Printer">Printer</option>
+                                <option value="Mouse">Mouse</option>
+                                <option value="CPU">CPU</option>
+                                <option value="Monitor">Monitor</option>
+                                <option value="Keyboard">Keyboard</option>
+                                <option value="Other">Others</option>
                                 {/* Add more options as needed */}
                             </select>
                         </div>
@@ -71,7 +90,7 @@ const handleBrandChange = (event) => {
                     <div className='det'>
                         <div>Brand</div>
                         <div className='ipt'>
-                            <select className='sel' onChange={handleBrandChange} value={selectedBrand}>
+                            <select className='sel' disabled={dis} onChange={handleBrandChange} value={selectedBrand}>
                             <option value="-1" selected>Select</option>
                                 <option value="samsung">Samsung</option>
                                 <option value="apple">Apple</option>
@@ -80,11 +99,12 @@ const handleBrandChange = (event) => {
                             </select>
                         </div>
                     </div>
+                  
 
                     <div className='det'>
                         <div>Model</div>
                         <div className='ipt'>
-                        <select className='sel' onChange={handleModelChange} value={selectedModel}>
+                        <select className='sel' disabled={dis} onChange={handleModelChange} value={selectedModel}>
                 {/* Use a dynamic list of models based on the selected brand */}
                 {selectedBrand === '-1' && (
                   <>
@@ -127,7 +147,24 @@ const handleBrandChange = (event) => {
                     <div className='ipt' ><input type="text" /></div>
                 </div> */}
 
-                <div className='det'>
+<div className='det'>
+                        <div>Quantity</div>
+                        <div className='ipt'>
+                            {/* <select className='sel' disabled={dis} onChange={handleBrandChange} value={selectedBrand}>
+                            <option value="-1" selected>Select</option>
+                                <option value="samsung">Samsung</option>
+                                <option value="apple">Apple</option>
+                                <option value="oneplus">Oneplus</option>
+                               
+                            </select> */}
+
+                            <input  className="sel" type="text" disabled={dis} />
+
+                        </div>
+                    </div>
+
+
+                <div className='det' style={{visibility: show?'visible':'hidden'}}>
                     <div>Is your device fully functional ?</div>
                     <div className='ipt' >
                         <div className='rad'>
@@ -145,7 +182,7 @@ const handleBrandChange = (event) => {
                         </div>
                 </div>
 
-                <div className='det'>
+                <div className='det' style={{visibility: show?'visible':'hidden'}}>
                     <div>Does the device power On ?</div>
                     <div className='ipt' >
                         <div className='rad'>
@@ -162,7 +199,7 @@ const handleBrandChange = (event) => {
                        
                         </div>
                 </div>
-                <div className='det'>
+                <div className='det' style={{visibility: show?'visible':'hidden'}}>
                     <div>Does the Screen lightup properly ?</div>
                     <div className='ipt' >
                         <div className='rad'>
@@ -179,7 +216,7 @@ const handleBrandChange = (event) => {
                        
                         </div>
                 </div>
-                <div className='det'>
+                <div className='det' style={{visibility: show?'visible':'hidden'}}>
                     <div>Are there Scratches on device ?</div>
                     <div className='ipt' >
                         <div className='rad'>
@@ -196,7 +233,7 @@ const handleBrandChange = (event) => {
                        
                         </div>
                 </div>
-                <div className='det'>
+                <div className='det' style={{visibility: show?'visible':'hidden', transition:'1s'}}>
                     <div>Are there cracks in the device body ?</div>
                     <div className='ipt' >
                         <div className='rad'>
@@ -216,8 +253,9 @@ const handleBrandChange = (event) => {
 
 
             </div>
-        
+
         </div>
+
         <button onClick={()=> {setIN(ind+1);
         alert(" Congratulations !! Pick Up is scheduled Successfully !!")}} className='mobibtn'>
         Pick Up
