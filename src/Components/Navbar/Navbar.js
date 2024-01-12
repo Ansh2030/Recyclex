@@ -13,7 +13,7 @@ function Navbar() {
     <div>
          <div className="header">
             <div className="logo-cantainer">
-                <h2 className="logo">Recyclex.</h2>
+                <h2 className="logo">RecycleX</h2>
             </div>
 
             <div className="nav-and-btn-cont">
@@ -25,7 +25,11 @@ function Navbar() {
                         {/* <li><a href="/app/chatbot">Chatbot</a></li> */}
                         {/* <li><a href="otherHTML/statistics.html">WHO WE ARE?</a></li> */}
                         <li><a href="/app/locate">LOCATE</a></li>
+<<<<<<< HEAD
                         <li><a href="/app/quiz">QUIZE</a></li>
+=======
+                        <li><a href="/app/quiz">QUIZ</a></li>
+>>>>>>> 79a21d0eaba3bc2f1ae5ddf6ef382ef40d3106b9
                         <li><a href="/app/dashboard">DASHBOARD</a></li>
                         <li><a href="/app/Market">MARKET</a></li>
                         {

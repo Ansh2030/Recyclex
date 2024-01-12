@@ -54,8 +54,20 @@ import pic48 from "../../Images/line-3.svg"
 import pic49 from "../../Images/line-2.svg"
 import pic50 from "../../Images/line-1.svg"
 import pic51 from "../../Images/line.svg"
-import pic52 from "../../Images/vector-276.svg"
+import pic52 from "../../Images/avatar.png"
 import pic53 from "../../Images/badge.png"
+import pic55 from "../../Images/starUserDashBoard.png"
+import pic56 from "../../Images/badgeUserDashBoard.png"
+import pic57 from "../../Images/hatUserDashBoard.png"
+import pic58 from "../../Images/crownUserDashBoard.png"
+import pic59 from "../../Images/diamondUserDashBoard.png"
+import pic60 from "../../Images/coinUserDashboard.jpg"
+
+
+
+
+
+
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 
@@ -559,15 +571,15 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="ellipse-5"></div>
-            <div className="header-3">Coin Image</div>
+            <div className="ellipse-5"><img className="coinGamifi" src={pic60}/></div>
+            {/* <div className="header-3">Coin Image</div> */}
           </div>
           <div className="overlap-28">
-            <div className="ellipse-6"></div>
-            <div className="ellipse-7"></div>
-            <div className="ellipse-8"></div>
-            <div className="ellipse-9"></div>
-            <div className="ellipse-10"></div>
+            <div className="ellipse-6"><img className="gamifiDashboard" src={pic55}/></div>
+            <div className="ellipse-7"><img className="gamifiDashboard" src={pic56}/></div>
+            <div className="ellipse-8"><img className="gamifiDashboard" src={pic58}/></div>
+            <div className="ellipse-9"><img className="gamifiDashboard" src={pic59}/></div>
+            <div className="ellipse-10"><img className="gamifiDashboard" src={pic57}/></div>
             <div className="primary-title-3">Contributor</div>
             <div className="primary-title-4">Professional</div>
             <div className="primary-title-5">Scholar</div>

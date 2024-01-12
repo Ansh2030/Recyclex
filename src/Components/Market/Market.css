@@ -29,12 +29,22 @@ margin: 0px auto;
     padding: 10px 10px;
     border: 1px solid green;
     border-radius: 20px;
+<<<<<<< HEAD
     
 
 }
 .foo{
     height:17vw;
 }
+=======
+
+}
+
+.foo{
+    height:17vw;
+}
+
+>>>>>>> 79a21d0eaba3bc2f1ae5ddf6ef382ef40d3106b9
 .leftmob .cred{
     margin-top: 250px;
 }
@@ -71,8 +81,13 @@ margin: 0px auto;
 }
 
 .rightmob .det .ipt input{
+<<<<<<< HEAD
     width: 250px;
     height: 33px;
+=======
+    width: 239px;
+    height: 35px;
+>>>>>>> 79a21d0eaba3bc2f1ae5ddf6ef382ef40d3106b9
 }
 
 /* .rgt{
@@ -95,6 +110,10 @@ margin: 0px auto;
     background-color: green;
     box-shadow:  4px 4px 4px 4px  hsla(0, 1%, 45%, 0.2);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 79a21d0eaba3bc2f1ae5ddf6ef382ef40d3106b9
 .mobibtn1
 {
     width:150px;
@@ -106,4 +125,15 @@ margin: 0px auto;
     border-radius: 20px;
     background-color: green;
     box-shadow:  4px 4px 8px 4px hsla(0, 1%, 45%, 0.2);
+<<<<<<< HEAD
 }
+=======
+}
+
+.sel{
+    border-radius: 21px;
+    width: 239px;
+    text-align: center;
+    padding: 5px;
+}
+>>>>>>> 79a21d0eaba3bc2f1ae5ddf6ef382ef40d3106b9

@@ -1,0 +1,23 @@
+/* MarkerF.css */
+
+/* Custom marker style */
+.marker {
+    position: absolute;
+    width: 24px; /* Adjust the width of the marker */
+    height: 24px; /* Adjust the height of the marker */
+    background-color: #4CAF50; /* Marker background color */
+    border-radius: 50%; /* Make it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Marker text color */
+    font-size: 14px; /* Adjust the font size of the text */
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Optional hover effect */
+  .marker:hover {
+    background-color: #45a049; /* Change background color on hover */
+  }
+  

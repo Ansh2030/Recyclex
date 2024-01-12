@@ -168,7 +168,11 @@ width:100%;
 .bot-right .output{
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     gap:10px;
+=======
+    gap: 10px;
+>>>>>>> 79a21d0eaba3bc2f1ae5ddf6ef382ef40d3106b9
     height: 30vw;
     width: 60vw;
     /* border: 3px solid black; */
@@ -202,3 +206,10 @@ width:100%;
     width: 40px;
 
 }
+ .returedDiv {
+    width: 500px;
+    height: max-content;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  } 

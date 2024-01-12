@@ -47,6 +47,7 @@ p::selection{
 
 .mainland{
     /* border:1px solid red; */
+    position: relative;
     width:100%;
     height:100vh;
     padding-bottom: 6em;
@@ -289,6 +290,7 @@ p::selection{
 
 
 .quotes{
+    text-align: justify;
     color: var(--dark-color);
     padding-bottom: 3em;
 }
@@ -300,7 +302,8 @@ p::selection{
 
 
 .content-2{
-    width:60ch;
+    width:51ch;
+    text-align: justify;
     padding: .1em .1em .1em 0.1em;
     z-index: 60;
     margin-bottom: 30px;
@@ -372,8 +375,9 @@ p::selection{
     width: 100%;
 } */
 .illustration-cont div img{
-    width: 100%;
-    height: 10%;
+    right: 10px;
+    bottom: -17px;
+   position: absolute;
     object-fit: cover;
 mix-blend-mode: darken;
     
