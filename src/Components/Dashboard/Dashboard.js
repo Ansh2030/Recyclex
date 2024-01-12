@@ -104,8 +104,8 @@ function Dashboard() {
               <img className="icon-settings" src={pic8} />
               <img className="icon-assignments" src={pic9} />
               <img className="line" src={pic10} />
-              <input className="name" placeholder="samwheeler@example.com" type="email" />
-              <div className="name-2">Sam Wheeler</div>
+              <input className="name" placeholder="TomerAyush@gmail.com" type="email" />
+              <div className="name-2">Ayush Tomer</div>
             </div>
           </div>
           <div className="title-wrapper"><div className="title-2">Recycle X</div></div>
@@ -498,7 +498,7 @@ function Dashboard() {
                   <div className="text-wrapper-6"><div className="text-4">Su</div></div>
                 </div>
                 <div className="line-8">
-                  <div className="atoms-week-namber"><div className="text-5">39</div></div>
+                  {/* <div className="atoms-week-namber"><div className="text-5">39</div></div> */}
                   <div className="text-wrapper-6"><div className="text-6">25</div></div>
                   <div className="text-wrapper-6"><div className="text-6">26</div></div>
                   <div className="text-wrapper-6"><div className="text-6">27</div></div>
@@ -508,7 +508,7 @@ function Dashboard() {
                   <div className="text-wrapper-6"><div className="text-4">1</div></div>
                 </div>
                 <div className="line-8">
-                  <div className="atoms-week-namber"><div className="text-2">40</div></div>
+                  {/* <div className="atoms-week-namber"><div className="text-2">40</div></div> */}
                   <div className="text-wrapper-6"><div className="text-3">2</div></div>
                   <div className="text-wrapper-6"><div className="text-3">3</div></div>
                   <div className="atoms-dey-number"><div className="text-8">4</div></div>
@@ -518,7 +518,7 @@ function Dashboard() {
                   <div className="text-wrapper-6"><div className="text-4">8</div></div>
                 </div>
                 <div className="line-8">
-                  <div className="atoms-week-namber"><div className="text-5">41</div></div>
+                  {/* <div className="atoms-week-namber"><div className="text-5">41</div></div> */}
                   <div className="text-wrapper-6"><div className="text-3">9</div></div>
                   <div className="text-wrapper-6"><div className="text-3">10</div></div>
                   <div className="text-wrapper-6"><div className="text-3">11</div></div>
@@ -528,7 +528,7 @@ function Dashboard() {
                   <div className="text-wrapper-6"><div className="text-4">15</div></div>
                 </div>
                 <div className="line-8">
-                  <div className="atoms-week-namber"><div className="text-5">42</div></div>
+                  {/* <div className="atoms-week-namber"><div className="text-5">42</div></div> */}
                   <div className="text-wrapper-6"><div className="text-3">16</div></div>
                   <div className="text-wrapper-6"><div className="text-3">17</div></div>
                   <div className="text-wrapper-6"><div className="text-3">18</div></div>
@@ -538,7 +538,7 @@ function Dashboard() {
                   <div className="text-wrapper-6"><div className="text-4">22</div></div>
                 </div>
                 <div className="line-8">
-                  <div className="atoms-week-namber"><div className="text-5">43</div></div>
+                  {/* <div className="atoms-week-namber"><div className="text-5">43</div></div> */}
                   <div className="text-wrapper-6"><div className="text-3">23</div></div>
                   <div className="text-wrapper-6"><div className="text-3">24</div></div>
                   <div className="text-wrapper-6"><div className="text-3">25</div></div>
@@ -548,7 +548,7 @@ function Dashboard() {
                   <div className="text-wrapper-6"><div className="text-4">29</div></div>
                 </div>
                 <div className="line-8">
-                  <div className="atoms-week-namber"><div className="text-5">44</div></div>
+                  {/* <div className="atoms-week-namber"><div className="text-5">44</div></div> */}
                   <div className="text-wrapper-6"><div className="text-3">30</div></div>
                   <div className="text-wrapper-6"><div className="text-3">31</div></div>
                   <div className="text-wrapper-6"><div className="text-6">1</div></div>

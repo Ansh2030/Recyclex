@@ -14,13 +14,25 @@ import a6 from "../Images/xiaomi.jpg";
 import Navbar from './Navbar/Navbar';
 import { useUserAuth } from '../Context/UserAuthContext';
 import Footer from './Footer/Footer';
+import Pop from "./Popup/Pop"
 function Landing() {
 
     const {user} = useUserAuth();
+    const [trigger, setTrigger] = useState(false);
+    useEffect(()=>{
+     setTimeout(()=>{
+       setTrigger(true);
+
+     },3000);
+   },[])
+
+
   return ( 
-    // user?
-<>
+   <>
+    <Pop trigger={trigger} setTrigger={setTrigger}/>
+<div style={{filter: trigger ? "blur(8px)":"" }  }>
 <Navbar/>
+
 <a href="HOME"></a>
     <div class="mainland">
 
@@ -48,7 +60,7 @@ function Landing() {
 
                 <div className="explore-btn-cont">
                     <a href="#SECTION_2"><button className="explore-btn">Explore</button></a>
-                    <a href="otherHTML/statistics.html"><button className="blog-btn">Statistics</button></a>
+                    <a href="otherHTML/statistics.html"><button className="blog-btn">Locate</button></a>
                 </div>
 
             </div>
@@ -261,7 +273,15 @@ function Landing() {
                     <p>
                         If you're seeking guidance or have inquiries about e-waste and its implications, our knowledgeable chatbot is at your service.
                     </p>
-                    <button className="take-me-there-btn" id="chat-bot-page-portal-btn">Take me there <i className="fas fa-long-arrow-alt-right take-there-arrow"></i></button>
+                    {/* <button className="take-me-there-btn" id="chat-bot-page-portal-btn">Take me there <i className="fas fa-long-arrow-alt-right take-there-arrow"></i></button> */}
+                </div>
+                <div>
+                    <h2>Facility Locator</h2>
+
+                    <p>
+                    We provide the best and the most trusted E-waste Facility Locations to get the Trash turn into Treasure. To Locate the E-waste Facility Locations near you , Go to  the Locate.   
+                    </p>
+                    {/* <button className="take-me-there-btn" id="chat-bot-page-portal-btn">Take me there <i className="fas fa-long-arrow-alt-right take-there-arrow"></i></button> */}
                 </div>
             </div>
 
@@ -338,6 +358,7 @@ function Landing() {
 
 
 <Footer/>
+   </div>
    </>
 //    <div>signIN first</div>
   )

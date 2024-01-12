@@ -123,6 +123,7 @@ function clearRout(){
   
   <div id="map">
        <GoogleMap 
+       className="goto"
        center={center}
         zoom ={13} 
         mapContainerStyle={{width:'600px', height:'780px'}}
@@ -182,7 +183,7 @@ function clearRout(){
           <img src={p1} onClick={clearRout} alt=""/>
 
         </div>
-
+ 
         <div className="output-row">
             <div className="output-data">
                 <span className="output-label">Distance:</span>
@@ -196,7 +197,7 @@ function clearRout(){
             </div>
         </div>
         
-        <img src={p2}  onClick={()=> map.panTo(center)} className="arrow" alt=""/>
+        <img  src={p2}  onClick={()=> map.panTo(center)} className="arrow" alt=""/>
     </div>
 
 

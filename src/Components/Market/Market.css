@@ -1,0 +1,109 @@
+.mobitech{
+    display: flex;
+ flex-direction: row;
+ 
+ 
+}
+
+.leftmob{
+    width: 22vw;
+    height: 44vw;
+    box-shadow:  4px 4px 8px 4px hsla(0, 1%, 45%, 0.2);
+margin:30px 70px;
+border-radius: 20px;
+padding: 50px 50px;
+text-align: center;
+
+}
+.leftmob h4{
+    margin-bottom: 30px;
+}
+
+.leftmob img {
+width:13vw;
+height: 15vw;
+object-fit: contain;
+margin: 0px auto;
+}
+.leftmob div{
+    padding: 10px 10px;
+    border: 1px solid green;
+    border-radius: 20px;
+    
+
+}
+.foo{
+    height:17vw;
+}
+.leftmob .cred{
+    margin-top: 250px;
+}
+
+.rightmob{
+    height: 38vw;
+    width:61vw;
+    box-shadow:  4px 4px 8px 4px hsla(0, 1%, 32%, 0.2);
+    margin-top:34px;
+    border-radius: 20px;
+    padding: 30px 30px;
+}
+.rightmob .det{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin-top: 20px;
+
+
+}
+
+
+.rightmob .det .ipt{
+    width:250px ;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: space-evenly;
+}
+.rightmob .det .ipt .rad{
+    display: flex;
+    flex-direction: row;
+    width: 70px;
+}
+
+.rightmob .det .ipt input{
+    width: 250px;
+    height: 33px;
+}
+
+/* .rgt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content:space-between;
+
+    border: 2px solid black;
+} */
+
+.mobibtn{
+    width:150px;
+    height: 40px;
+    position: absolute;
+    right:10vw;
+    top: 770px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: green;
+    box-shadow:  4px 4px 4px 4px  hsla(0, 1%, 45%, 0.2);
+}
+.mobibtn1
+{
+    width:150px;
+    height: 40px;
+    position: absolute;
+    right:21vw;
+    top: 770px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: green;
+    box-shadow:  4px 4px 8px 4px hsla(0, 1%, 45%, 0.2);
+}

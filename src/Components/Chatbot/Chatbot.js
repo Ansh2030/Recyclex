@@ -1,20 +1,32 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Chatbot.css";
 import bot from "../../Images/bro.png";
 import ai  from  "../../Images/AI .png";
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+import { doc } from 'firebase/firestore';
 
 const Chatbot = ()=> {
+  
+  const [arr, setOut] = useState([
+    "Hi !! How may I help you ?"
+  ]);
+
+  
+
+
+
 
     useEffect( () => {
         const submitButton = document.getElementById("submit-button");
         const userInput = document.getElementById("user-input");
-        const userOutput = document.querySelector(".output-Speech");
+        const userOutput = document.querySelector(".output");
+
     
         submitButton.addEventListener("click", () => {
             const message = userInput.value.trim();
-        console.log("the button was clicked");
+        console.log("the button was clicked", message);
+        arr.push(message);
             if (message === '') {
                 return; // Don't send empty messages
             }
@@ -27,6 +39,8 @@ const Chatbot = ()=> {
             formData.append('message', message);
     
             // Make an API request to http://127.0.0.1:5000/response
+
+
             fetch("http://127.0.0.1:5000/response", {
                 method: "POST",
                 body: formData // Send the FormData object
@@ -48,10 +62,14 @@ const Chatbot = ()=> {
         });
     
         function addBotMessage(message) {
-            userOutput.innerHTML = `Chatbot: ${message}`;
+            // userOutput.innerHTML = `Chatbot: ${message}`;
+            // arr.push(message)
+            setOut(message);
             
         }
-    },[]);
+
+
+    },[])
     
 
 
@@ -60,18 +78,8 @@ const Chatbot = ()=> {
   return (
     <div>
        <Navbar/>
-        {/* <div className="back-to-home">
-      <a href="../index.html">
-        <h1><i className="fas fa-long-arrow-alt-right back-to-home-arrow"></i>
-        </h1>
-      </a>
-    </div> */}
-
     <div className="whole-bot-cont">
-      {/* <div className="the-head">
-        <p>Im Here for you &#60;3</p>
-      </div> */}
-
+   
       <div className="bot-cont">
         <div className="bot-img-cont"> <img src={bot} alt=""/></div>
 
@@ -80,17 +88,19 @@ const Chatbot = ()=> {
 
         <div className='bot-right'>
           <div className='output'>
+              {
+                arr.map((element)=>{
+                  return <p>{element}</p>
+                })
 
+              }
+           
           </div>
-
-
-
            <div className="bot-page-btns">
-        
           <div className="start-convo-btn-cont">
             <label>Enter your message:</label>
             <input type="text" id="user-input" />
-            <button className="start-convo-btn" id="submit-button">
+            <button  className="start-convo-btn" id="submit-button">
               Submit
             </button>
           </div>
@@ -108,6 +118,6 @@ const Chatbot = ()=> {
     <Footer/>
     </div>
   )
-}
-
+        
+            }
 export default Chatbot

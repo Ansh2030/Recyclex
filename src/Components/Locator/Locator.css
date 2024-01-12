@@ -77,13 +77,15 @@ Height:858px;
 
 .car{
     position: relative;
-    background-color: #fff;
+    /* background-color: #fff; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
     border-radius: 25px;
     padding: 20px;
     width: 650px;
     text-align: left;
     margin: 0 auto;
+    width:max-content;
+    height:150px
 }
 
 .input-row {
@@ -91,15 +93,19 @@ Height:858px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+
 }
+
 
 .input-row input[type="text"] {
     flex: 1;
     padding: 5px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 5px;
     font-size: 16px;
     margin-right: 10px;
+    border-radius: 10px;
+    width:300px
 }
 
 .input-row button {
@@ -107,7 +113,11 @@ Height:858px;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.car img:hover{
     cursor: pointer;
 }
 
@@ -115,12 +125,15 @@ Height:858px;
     display: flex;
     gap: 20px;
     align-items: center;
+    margin-top: 30px;
+    margin-left: 5px;
 }
 
 .car .output-row  .output-data {
     /* position: relative; */
     display: flex;
     align-items: center;
+    width:300px
 }
 
 .car .output-row  .output-label {
@@ -153,5 +166,6 @@ i.fas.fa-times {
 .car .arrow{
     position: absolute;
     right: 24px;
-    bottom: 15px;
+    bottom: 25px;
+
 }
